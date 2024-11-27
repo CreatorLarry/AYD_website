@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
+    color: #6a6a6a;
+}
+
+html {
+    /*box-sizing: border-box;*/
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body {
+    /*box-sizing: border-box;*/
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: #6a6a6a;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+a:hover {
+    color: #F4BE00;
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    padding: 120px 0;
+}
+
+/*Navbar*/
+.navbar-nav {
+    gap: 1.5rem; /* Adds spacing between the links */
+}
+
+.navbar {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); /* Optional: Transparent background */
+    /*border-bottom: 1px solid #F4BE00; !* Optional: Thin border at the bottom *!*/
+}
+
+/*.navbar{*/
+/*    background: #1B335F;*/
+/*}*/
+
+.logo {
+    width: 110px;
+}
+
+.nav-link {
+    color: #FFFFFF;
+}
+
+.btn-call {
+    background: #F4BE00;
+    color: #fff;
+}
+
+/*HERO*/
+.btn-start {
+    background: #F4BE00;
+    color: #fff;
+}
+
+#hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/hero_background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+span {
+    color: #F4BE00;
+}
+
+.btn {
+    font-weight: 500;
+    padding: 14px 32px;
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    border-color: #F4BE00;
+    scale: 1.03;
+}
+
+/*About*/
+#about {
+    position: relative;
+}
+
+#about::before {
+    content: '';
+    width: 25%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #F4BE00;
+    z-index: -1;
+}
+
+/* Base styles */
+.about-img img {
+    width: 100%;
+    height: auto;
+}
+
+.about-text {
+    z-index: 10;
+    position: relative;
+    background: rgba(255, 255, 255, 0.8); /* Optional background for better readability */
+    padding: 20px;
+    border-radius: 8px; /* Optional for a modern look */
+}
+
+/* Media Query for smaller devices */
+@media (max-width: 992px) {
+    .small-dev {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .about-img {
+        position: relative;
+    }
+
+    .about-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center; /* Center text */
+    }
+}
+
+.section-title {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+}
+
+
+/*SERVICES*/
+.services {
+    transition: all 0.2s ease;
+}
+
+.services:hover {
+    border-color: #F4BE00;
+    scale: 1.01;
+}
+
+/*PROJECTS*/
+#portfolio {
+    background: linear-gradient(rgb(0, 0, 0), rgb(244, 190, 0));
+}
+
+.project {
+    position: relative;
+    overflow: hidden;
+}
+
+.project img {
+    transition: all 1s ease;
+}
+
+.project a {
+    color: #F4BE00;
+    width: 150px;
+    height: 150px;
+    border: solid 0.3em #F4BE00;
+    display: grid;
+    font-size: 12px;
+    font-weight: 1000;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    top: 90%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 1s ease;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.project:hover img {
+    transform: scale(1.1);
+}
+
+.project:hover a {
+    visibility: visible;
+    opacity: 1;
+    border-color: #F4BE00;
+    top: 50%;
+}
+
+.project {
+    border-radius: 1em;
+}
+
+.owl-carousel {
+    .owl-nav button.owl-prev,
+    .owl-nav button.owl-next {
+        font-size: 50px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 50%;
+        background-color: #333;
+        color: #fff;
+        border: none;
+    }
+
+    .owl-nav button.owl-prev:hover,
+    .owl-nav button.owl-next:hover {
+        background-color: #ffffff; /* Change background on hover */
+        color: #ffffff; /* Change arrow color on hover */
+    }
+}
+
+
+/*REVIEWS*/
+#reviews {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/review-background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.las{
+    color: #F4BE00;
+}
+
+/*END REVIEWS*/
