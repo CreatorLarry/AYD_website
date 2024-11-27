@@ -7,14 +7,12 @@ body {
 }
 
 html {
-    /*box-sizing: border-box;*/
     padding: 0;
     margin: 0;
     overflow-x: hidden;
 }
 
 body {
-    /*box-sizing: border-box;*/
     padding: 0;
     margin: 0;
     overflow-x: hidden;
@@ -26,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-    color: #FFFFFF;
+    color: #261cea;
     text-decoration: none;
     transition: all 0.4s ease;
     font-weight: 500;
@@ -47,17 +45,12 @@ section {
 
 /*Navbar*/
 .navbar-nav {
-    gap: 1.5rem; /* Adds spacing between the links */
+    gap: 2rem;
 }
 
 .navbar {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); /* Optional: Transparent background */
-    /*border-bottom: 1px solid #F4BE00; !* Optional: Thin border at the bottom *!*/
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
 }
-
-/*.navbar{*/
-/*    background: #1B335F;*/
-/*}*/
 
 .logo {
     width: 110px;
@@ -67,10 +60,45 @@ section {
     color: #FFFFFF;
 }
 
+.nav-link:hover {
+    color: #f4be00;
+}
+
 .btn-call {
     background: #F4BE00;
     color: #fff;
 }
+
+.navbar-toggler {
+    border: none;
+    background: none;
+    outline: none;
+    position: relative;
+    z-index: 2;
+}
+
+.navbar-toggler .line {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #F4BE00;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.navbar-toggler.open .line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.navbar-toggler.open .line:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-toggler.open .line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
 
 /*HERO*/
 .btn-start {
@@ -115,7 +143,7 @@ span {
     z-index: -1;
 }
 
-/* Base styles */
+
 .about-img img {
     width: 100%;
     height: auto;
@@ -144,7 +172,7 @@ span {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        text-align: center; /* Center text */
+        text-align: center;
     }
 }
 
@@ -230,8 +258,8 @@ span {
 
     .owl-nav button.owl-prev:hover,
     .owl-nav button.owl-next:hover {
-        background-color: #ffffff; /* Change background on hover */
-        color: #ffffff; /* Change arrow color on hover */
+        background-color: #ffffff;
+        color: #ffffff;
     }
 }
 
@@ -246,4 +274,35 @@ span {
     color: #F4BE00;
 }
 
+.owl-nav {
+    display: flex !important;
+    justify-content: center;
+    position: relative;
+    z-index: 10
+}
+
+.review{
+    transition: all 1s ease;
+}
+
+.review:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    scale: 1.02;
+}
+
+/*BLOG*/
+.link::before{
+    content: '';
+    width: 16px;
+    height: 2px;
+    background-color: #F4BE00;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    transition: all 0.4s ease;
+}
+
+.link:hover::before{
+    width: 8%;
+}
 /*END REVIEWS*/

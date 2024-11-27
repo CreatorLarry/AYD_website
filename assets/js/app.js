@@ -1,3 +1,27 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const toggler = document.querySelector(".navbar-toggler");
+    toggler.addEventListener("click", function () {
+        this.classList.toggle("open");
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const toggler = document.querySelector(".navbar-toggler");
+    const navbarCollapse = document.querySelector("#navbarNav");
+
+    toggler.addEventListener("click", function () {
+        this.classList.toggle("open");
+    });
+
+    navbarCollapse.addEventListener("hidden.bs.collapse", function () {
+        toggler.classList.remove("open");
+    });
+
+    navbarCollapse.addEventListener("shown.bs.collapse", function () {
+        toggler.classList.add("open");
+    });
+});
+
 // close nav-bar on nav-link click and close navbar on outside click
 document.addEventListener('DOMContentLoaded', function () {
     const navbarToggler = document.querySelector('.navbar-toggler');
