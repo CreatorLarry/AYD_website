@@ -14,6 +14,7 @@
           href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="./assets/css/line-awesome.min.css">
     <link rel="stylesheet" href="./assets/css/aos.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 <body>
@@ -59,14 +60,16 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-10 text-white">
-                <h1 class="display-4 text-white fw-bold mt-0" data-aos="fade-up" data-aos-delay="100">Ready to embrace the website era for <span>Business and Organizational</span>
+                <h1 class="display-4 text-white fw-bold mt-0" data-aos="fade-up">Ready to embrace the website era for
+                    <span>Business and Organizational</span>
                     Awareness?</h1>
-                <p class="lead mx-auto mt-3 mb-4" style="max-width: 600px" data-aos="fade-up" data-aos-delay="300">Your website is the key to unlocking growth
+                <p class="lead mx-auto mt-3 mb-4" style="max-width: 600px" data-aos="fade-up" data-aos-delay="200">Your
+                    website is the key to unlocking growth
                     in today’s
                     digital world. With smart design and
                     state-of-the-art functionality, we’ll help you attract customers, build trust and drive success like
                     never before!</p>
-                <a href="#" class="btn btn-start">Get Started</a>
+                <a href="#services" class="btn btn-start" data-aos="fade-up" data-aos-delay="250">Get Started</a>
             </div>
         </div>
     </div>
@@ -77,17 +80,17 @@
 <div id="about" class="min-vh-100 d-flex align-items-center full-height px-lg-5">
     <div class="container">
         <div class="row align-items-center small-dev">
-            <div class="col-lg-5 about-img">
+            <div class="col-lg-5 about-img" data-aos="fade-right" data-aos-delay="200">
                 <img src="./assets/images/about.jpg" alt="about_image">
             </div>
-            <div class="col-lg-5 offset-lg-1 about-text">
+            <div class="col-lg-5 offset-lg-1 about-text" data-aos="fade-left" data-aos-delay="200">
                 <h6><span>About</span> Company</h6>
                 <h1>Showcase your <span>content</span> and make a great first impression <span>Just Like This!</span>
                 </h1>
                 <p>Advertising on websites helps boost visibility, target the right audience, drive engagement, and
                     deliver cost-effective solutions, making it a powerful tool for businesses looking to grow and
                     connect with their customers.</p>
-                <a href="#" class="btn btn-call">Explore Our Work</a>
+                <a href="#portfolio" class="btn btn-call" data-aos="fade-up" data-aos-delay="100">Explore Our Work</a>
             </div>
         </div>
     </div>
@@ -99,7 +102,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="section-title">
+                <div class="section-title" data-aos="fade-up">
                     <h6>Our <span>Services</span></h6>
                     <h1><span>Creative</span> Solutions for You</h1>
                     <p>At Art Your Dreams, we specialize in transforming ideas into captivating visuals and
@@ -109,7 +112,7 @@
             </div>
         </div>
 
-        <div class="row gy-4">
+        <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
             <div class="col-lg-4 col-sm-6">
                 <div class="services bg-white rounded p-4 p-sm-5 h-100 d-flex flex-column">
                     <img src="./assets/images/branding-icon.png" style="width: 3em" alt="branding-icon">
@@ -172,7 +175,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12">
-                <div class="section-title">
+                <div class="section-title" data-aos="fade-down">
                     <h6><span>Portfolio</span></h6>
                     <h1 class="text-white">Crafting <span>Your Im</span>agination</h1>
                     <p class="text-white">Explore our creative projects, where vision meets execution to bring ideas
@@ -182,7 +185,7 @@
         </div>
 
         <!--        CAROUSEL SLIDER-->
-        <div class="row">
+        <div class="row" data-aos="fade-zoom-in" data-aos-delay="200" data-aos-easing="ease-in-sine">
             <div class="owl-carousel owl-theme" id="portfolio-carousel">
                 <div class="project">
                     <img src="./assets/images/apple_services_project_1.jpeg" alt="img-1">
@@ -255,7 +258,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="section-title mt-4">
+                <div class="section-title mt-4" data-aos="fade-down">
                     <h6><span>Testimonials</span></h6>
                     <h1 class="text-white">What <span>Our Customers</span> Say</h1>
                     <p class="text-white">See what our clients say about their journey with
@@ -264,8 +267,10 @@
             </div>
         </div>
         <!--SLIDER-->
-        <div class="owl-carousel owl-theme" id="reviews-carousel">
-            <div class="review bg-light bg-opacity-75 rounded-end-4 p-4 p-md-5 h-100 d-flex flex-column">
+        <div class="owl-carousel owl-theme" id="reviews-carousel" data-aos="zoom-out-down" data-aos-delay="200"
+             data-aos-easing="ease-in-sine">
+            <div class="review bg-light bg-opacity-75 rounded-end-4 p-4 p-md-5 h-100 d-flex flex-column"
+                 data-aos="zoom-out-down">
                 <div class="text-brand h5">
                     <i class="las la-star"></i>
                     <i class="las la-star"></i>
@@ -336,7 +341,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="section-title">
+                <div class="section-title" data-aos="fade-up">
                     <h6><span>Blogs</span></h6>
                     <h1 class="text-white"><span>Featured</span> Blogs</h1>
                 </div>
@@ -344,36 +349,40 @@
         </div>
 
         <div class="row">
-            <div class="col-lg-4 gy-4">
+            <div class="col-lg-4 gy-4" data-aos="flip-left" data-aos-delay="200">
                 <div class="blog-post rounded-4">
                     <div class="image-container">
                         <img src="./assets/images/blog1_white.jpg" alt="blog-1">
                     </div>
                     <p class="mb-1 mt-4 text-white-50">20 May, 2024</p>
                     <h5 class="my-3 text-white"><span>Welcome The Ages; </span>The story of Hospitality</h5>
-                    <a href="#" class="link">Read More</a>
+                    <p class="mb-1 mt-3 text-white-50"><span>By</span> Cynthia Ngure</p>
+                    <a href=href="https://www.mobileapp.app/to/Eh4kEBY?ref=cl" target="_blank" class="link">Read
+                        More</a>
                 </div>
             </div>
 
-            <div class="col-lg-4 gy-4">
+            <div class="col-lg-4 gy-4" data-aos="flip-left" data-aos-delay="400">
                 <div class="blog-post rounded-4">
                     <div class="image-container">
                         <img src="./assets/images/blog2_white.jpg" alt="blog-2">
                     </div>
                     <p class="mb-1 mt-4 text-white-50">20 May, 2024</p>
-                    <h5 class="my-3 text-white"><span>Welcome The Ages; </span>The story of Hospitality</h5>
-                    <a href="#" class="link">Read More</a>
+                    <h5 class="my-3 text-white"><span>Holders and Sniffers.</span> (Which one are you?)</h5>
+                    <p class="mb-1 mt-3 text-white-50"><span>By</span> Dr Orian Taraban</p>
+                    <a href="https://oriontaraban.podbean.com/e/episode-483/" target="_blank" class="link">Read More</a>
                 </div>
             </div>
 
-            <div class="col-lg-4 gy-4">
+            <div class="col-lg-4 gy-4" data-aos="flip-left" data-aos-delay="600">
                 <div class="blog-post rounded-4">
                     <div class="image-container">
                         <img src="./assets/images/blog3_white.jpg" alt="blog-3">
                     </div>
                     <p class="mb-1 mt-4 text-white-50">20 May, 2024</p>
                     <h5 class="my-3 text-white"><span>Importance of Websites: </span>10 Reasons Why they Matter</h5>
-                    <a href="https://webflow.com/blog/importance-of-website" class="link">Read More</a>
+                    <p class="mb-1 mt-3 text-white-50"><span>By</span> Webflow Team</p>
+                    <a href="https://webflow.com/blog/importance-of-website" target="_blank" class="link">Read More</a>
                 </div>
             </div>
         </div>
@@ -384,64 +393,78 @@
 
 <!--FOOTER-->
 <footer class="bg-dark footer-content" id="contact">
-    <div class="container footer-top">
-        <div class="row gy-4">
-            <div class="col-lg-5">
-                <h2 class="mb-3 mb-lg-4">Contact Us</h2>
-                <div class="contact_container">
-                    <i class="icon las la-phone-volume h4"></i>
-                    <a href="+254 758 781717" class="contact_links">
-                        <p style="margin-bottom: 0; margin-left: 16px;">+254 758 781717</p>
-                    </a>
+    <div class="footer-container" data-aos="fade-right" data-aos-delay="100">
+        <div class="container footer-top">
+            <div class="row gy-4">
+                <div class="col-lg-5">
+                    <h2 class="mb-3 mb-lg-4">Contact Us</h2>
+                    <div class="contact_container">
+                        <i class="icon las la-phone-volume h4"></i>
+                        <a href="+254 758 781717" target="_blank" class="contact_links">
+                            <p style="margin-bottom: 0; margin-left: 16px;">+254 758 781717</p>
+                        </a>
+                    </div>
+
+                    <div class="contact_container">
+                        <i class="icon las la-envelope h4"></i>
+                        <a href="mailto:artyourdreams1@gmail.com" target="_blank" class="contact_links">
+                            <p style="margin-bottom: 0; margin-left: 16px;">artyourdreams1@gmail.com</p>
+                        </a>
+                    </div>
+                    <div class="contact_container">
+                        <i class="icon las la-map-marker-alt h4"></i>
+                        <a href="https://www.google.com/maps/place/Nairobi/@-1.3028603,36.6825792,11z/data=!3m1!4b1!4m6!3m5!1s0x182f1172d84d49a7:0xf7cf0254b297924c!8m2!3d-1.2920659!4d36.8219462!16zL20vMDVkNDk?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D"
+                           target="_blank"
+                           class="contact_links">
+                            <p style="margin-bottom: 0; margin-left: 16px;">Nairobi, KENYA</p>
+                        </a>
+                    </div>
                 </div>
 
-                <div class="contact_container">
-                    <i class="icon las la-envelope h4"></i>
-                    <a href="mailto:artyourdreams1@gmail.com" class="contact_links">
-                        <p style="margin-bottom: 0; margin-left: 16px;">artyourdreams1@gmail.com</p>
-                    </a>
+                <div class="col-lg-3 ms-auto align-items-center">
+                    <h2 class="mb-3 mb-lg-4">Services</h2>
+                    <ul>
+                        <li><a href="#" class="link">Branding</a></li>
+                        <li><a href="#" class="link">Logo Designing</a></li>
+                        <li><a href="#" class="link">Modern Posters</a></li>
+                        <li><a href="#" class="link">Marketing</a></li>
+                        <li><a href="#" class="link">UI/UX Designing</a></li>
+                        <li><a href="#" class="link">Web Development</a></li>
+                    </ul>
                 </div>
-                <div class="contact_container">
-                    <i class="icon las la-map-marker-alt h4"></i>
-                    <a href="https://www.google.com/maps/place/Nairobi/@-1.3028603,36.6825792,11z/data=!3m1!4b1!4m6!3m5!1s0x182f1172d84d49a7:0xf7cf0254b297924c!8m2!3d-1.2920659!4d36.8219462!16zL20vMDVkNDk?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D"
-                       class="contact_links">
-                        <p style="margin-bottom: 0; margin-left: 16px;">Nairobi, KENYA</p>
-                    </a>
+
+
+                <div class="col-lg-3 ms-auto align-items-center">
+                    <h2 class="mb-3 mb-lg-4">Follow Us</h2>
+                    <ul>
+                        <li class="text-decoration-none"><a
+                                href="https://www.instagram.com/i_am_n.g.u.g.i._/profilecard/?igsh=MWJreWRzbTl5ZDJueg=="
+                                target="_blank" class="footer-icons"><i
+                                class="lab la-instagram h2"></i></a></li>
+                        <li class="text-decoration-none"><a
+                                href="https://www.linkedin.com/in/lawrence-ngugi-367585233?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                target="_blank" class="footer-icons"><i
+                                class="lab la-linkedin h2"></i></a></li>
+                        <li class="text-decoration-none"><a href="https://github.com/CreatorLarry" target="_blank"
+                                                            class="footer-icons"><i
+                                class="lab la-github h2"></i></a></li>
+                        <li class="text-decoration-none"><a href="https://x.com/iamngugi1" target="_blank"
+                                                            class="footer-icons"><i
+                                class="lab la-twitter h2"></i></a></li>
+
+                    </ul>
                 </div>
             </div>
+        </div>
 
-            <div class="col-lg-3 ms-auto align-items-center">
-                <h2 class="mb-3 mb-lg-4">Services</h2>
-                <ul>
-                    <li><a href="#" class="link">Branding</a></li>
-                    <li><a href="#" class="link">Logo Designing</a></li>
-                    <li><a href="#" class="link">Modern Posters</a></li>
-                    <li><a href="#" class="link">Marketing</a></li>
-                    <li><a href="#" class="link">UI/UX Designing</a></li>
-                    <li><a href="#" class="link">Web Development</a></li>
-                </ul>
-            </div>
-
-
-            <div class="col-lg-3 ms-auto align-items-center">
-                <h2 class="mb-3 mb-lg-4">Follow Us</h2>
-                <ul>
-                    <li class="text-decoration-none"><a href="#" class="footer-icons"><i class="lab la-instagram h2"></i></a></li>
-                    <li class="text-decoration-none"><a href="#" class="footer-icons"><i class="lab la-linkedin h2"></i></a></li>
-                    <li class="text-decoration-none"><a href="#" class="footer-icons"><i class="lab la-github h2"></i></a></li>
-                    <li class="text-decoration-none"><a href="#" class="footer-icons"><i class="lab la-twitter h2"></i></a></li>
-
-                </ul>
+        <div class="container footer-bottom">
+            <div class="row gy-4 justify-content-between">
+                <div class="col-auto"><p class="mb-0 text-white">©2024</p></div>
+                <div class="col-auto"><p class="mb-0 text-white">Designed by <a href="#">Mwangi Ngugi</a></p></div>
             </div>
         </div>
     </div>
 
-    <div class="container footer-bottom">
-        <div class="row gy-4 justify-content-between">
-            <div class="col-auto"><p class="mb-0 text-white">©2024</p></div>
-            <div class="col-auto"><p class="mb-0 text-white">Designed by <a href="#">Mwangi Ngugi</a></p></div>
-        </div>
-    </div>
 </footer>
 
 <!--END FOOTER-->
@@ -451,6 +474,11 @@
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <!--owl carousel-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<!--aos animations-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 <script src="./assets/js/app.js"></script>
 </body>
 </html>
