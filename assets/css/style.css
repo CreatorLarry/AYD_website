@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-    color: #261cea;
+    color: #ffffff;
     text-decoration: none;
     transition: all 0.4s ease;
     font-weight: 500;
@@ -157,7 +157,7 @@ span {
     border-radius: 8px; /* Optional for a modern look */
 }
 
-/* Media Query for smaller devices */
+
 @media (max-width: 992px) {
     .small-dev {
         flex-direction: column; /* Stack items vertically */
@@ -270,7 +270,8 @@ span {
     background-size: cover;
     background-position: center;
 }
-.las{
+
+.las {
     color: #F4BE00;
 }
 
@@ -281,7 +282,7 @@ span {
     z-index: 10
 }
 
-.review{
+.review {
     transition: all 1s ease;
 }
 
@@ -290,8 +291,17 @@ span {
     scale: 1.02;
 }
 
+/*END REVIEWS*/
+
+
 /*BLOG*/
-.link::before{
+#blog {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/blog_bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.link::before {
     content: '';
     width: 16px;
     height: 2px;
@@ -302,7 +312,67 @@ span {
     transition: all 0.4s ease;
 }
 
-.link:hover::before{
+.link:hover::before {
     width: 8%;
 }
-/*END REVIEWS*/
+
+.image-container {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*END BLOG*/
+
+/*FOOTER*/
+.contact_container {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.contact_container{
+    margin: 1em 0;
+}
+
+.lab{
+    transition: all 0.4s ease;
+}
+
+.lab:hover{
+    scale: 1.03;
+}
+
+footer ul{
+    list-style: none;
+}
+
+@media (max-width: 992px) {
+    .footer-top {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+}
+
+.footer-top{
+    padding-bottom: 0.5rem;
+}
+
+.footer-bottom{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 1px solid #F4BE00;
+}
+
+/*END FOOTER*/
